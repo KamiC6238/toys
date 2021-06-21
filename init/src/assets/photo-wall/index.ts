@@ -8,6 +8,13 @@ import wall7 from './wall7.png'
 import wall8 from './wall8.png'
 import wall9 from './wall9.png'
 import wall10 from './wall10.png'
+import wall11 from './wall11.png'
+import wall12 from './wall12.png'
+import wall13 from './wall13.png'
+import wall14 from './wall14.png'
+import wall15 from './wall15.png'
+import wall16 from './wall16.png'
+import wall17 from './wall17.png'
 
 export {
   wall1,
@@ -19,5 +26,12 @@ export {
   wall7,
   wall8,
   wall9,
-  wall10
+  wall10,
+  wall11,
+  wall12,
+  wall13,
+  wall14,
+  wall15,
+  wall16,
+  wall17,
 }
