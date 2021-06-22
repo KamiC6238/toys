@@ -4,7 +4,7 @@ import React from 'react'
 import { Container, ImageWrapper, Image } from './style'
 import { lazyloadImages } from './utils'
 
-export const PhotoWallDemo: React.FC<{}> = React.memo(() => {
+export const GetBoundingClientRectDemo: React.FC<{}> = React.memo(() => {
   const ref = React.useRef<HTMLDivElement | null>(null)
 
   const showImageIfNeed = React.useCallback(() => {
