@@ -15,6 +15,8 @@ export const IntersectionObserverLazyload: FC<{}> = memo(() => {
         _target.onload = () => {
           _target.style.opacity = '1'
         }
+
+        observerRef.current.unobserve(_target)
       }
     })
   }))
@@ -32,9 +34,8 @@ export const IntersectionObserverLazyload: FC<{}> = memo(() => {
   return (
     <Container>
       {lazyloadImages.map((image, index) => (
-        <ImageWrapper>
+        <ImageWrapper key={index}>
           <Image
-            key={index}
             src={undefined}
             data-src={image}
             alt={`${index}`}

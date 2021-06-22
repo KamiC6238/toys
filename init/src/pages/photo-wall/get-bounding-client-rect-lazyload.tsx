@@ -42,9 +42,8 @@ export const GetBoundingClientRectDemo: React.FC<{}> = React.memo(() => {
   return (
     <Container ref={ref}>
       {lazyloadImages.map((image, index) => (
-        <ImageWrapper>
+        <ImageWrapper key={index}>
           <Image
-            key={index}
             src={undefined}
             data-src={image}
             alt={`${index}`}
