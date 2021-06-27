@@ -6,7 +6,7 @@
 3. 简易的发布订阅系统 （支持 `subscribe`, `publish`, `once`, `unsubscribe`, `unsubscribeAll`）
 4. 简易的 `Promise` 实现
 5. 轮播图
-6. call、apply、bind、instanceof 的实现
+6. `call`、`apply`、`bind`、`instanceof` 的实现
 
 # 技术栈 (可能会持续更新)
 React + TS + Emotion + Vite
