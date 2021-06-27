@@ -7,6 +7,7 @@
 4. 简易的 `Promise` 实现
 5. 轮播图
 6. `call`、`apply`、`bind`、`instanceof` 的实现
+7. `throttle` 的实现。`setTimeout` 配合时间戳
 
 # 技术栈 (可能会持续更新)
 React + TS + Emotion + Vite
