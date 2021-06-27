@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { HOME, CAROUSEL, GET_BOUNDING_CLIENT_RECT_LAZYLOAD, INTERSECTION_OBSERVER_LAZYLOAD } from '../../common'
+import { HOME, CAROUSEL, GET_BOUNDING_CLIENT_RECT_LAZYLOAD, INTERSECTION_OBSERVER_LAZYLOAD, THROTTLE } from '../../common'
 
 const Container = styled.div({
   '& > a': {
@@ -17,6 +17,7 @@ export const HomePage: React.FC<{}> = React.memo(() => {
       <Link to={CAROUSEL}>轮播图</Link>
       <Link to={GET_BOUNDING_CLIENT_RECT_LAZYLOAD}>getBoundingClientRect 懒加载</Link>
       <Link to={INTERSECTION_OBSERVER_LAZYLOAD}>intersection observer 懒加载</Link>
+      <Link to={THROTTLE}>节流</Link>
     </Container>
   )
-})
+})  
