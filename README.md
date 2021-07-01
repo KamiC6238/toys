@@ -9,7 +9,8 @@
 6. `call`、`apply`、`bind`、`instanceof` 的实现
 7. `throttle` 的实现。`setTimeout` 配合时间戳
 8. `debounce` 的实现
-9. 简易版 `Promise.all`, `Promise.race`, `Promise.allSettled`
+9. 简易版 `Promise.all`, `Promise.race`, `Promise.allSettled
+10. 实现一个 `memorized` 函数，用于缓存函数的计算结果
 
 # 技术栈 (可能会持续更新)
 React + TS + Emotion + Vite
