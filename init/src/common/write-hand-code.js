@@ -27,23 +27,21 @@ Function.prototype.myApply = function (context) {
   return result
 }
 
-Function.prototype.myBind = function (context) {
+Function.prototype.myBind = function (context, ...args) {
   if (typeof this !== 'function') {
     throw TypeError('myBind can only be called by function')
   }
 
   let _context = context ? context : window
-  let fnSymbol = Symbol()
-  _context[fnSymbol] = this
 
   let _this = this
   let fnProto = function () {}
   let fnResult = function () {
     _this.apply(
-      this instanceof fnResult
+      this instanceof _this
         ? this
         : _context,
-        Array.prototype.slice.call(arguments, 1)
+        args.concat(Array.prototype.slice.call(arguments))
       )
   }
 
