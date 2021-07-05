@@ -11,6 +11,8 @@
 8. `debounce` 的实现
 9. 简易版 `Promise.all`, `Promise.race`, `Promise.allSettled
 10. 实现一个 `memorized` 函数，用于缓存函数的计算结果
+11. `reduce` 实现数组拍平
+12. `callback` 实现 `lazyMan`
 
 # 技术栈 (可能会持续更新)
 React + TS + Emotion + Vite
