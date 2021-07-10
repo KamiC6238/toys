@@ -121,11 +121,11 @@ const resolvePromise = (promise2, x, resolve, reject) => {
         then.call(x, y => {
           if (called) return
           called = true
-          resolvePromise(promise2, x, resolve, reject)
+          resolvePromise(promise2, y, resolve, reject)
         }, r => {
           if (called) return
           called = true
-          resolvePromise(promise2, x, resolve, reject)
+          reject(r)
         })
       } catch (err) {
         if (called) return
