@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { HOME, CAROUSEL, GET_BOUNDING_CLIENT_RECT_LAZYLOAD, INTERSECTION_OBSERVER_LAZYLOAD, THROTTLE, DEBOUNCE } from '../../common'
+import { HOME, CAROUSEL, GET_BOUNDING_CLIENT_RECT_LAZYLOAD, INTERSECTION_OBSERVER_LAZYLOAD, THROTTLE, DEBOUNCE, Promise } from '../../common'
 
 const Container = styled.div({
   '& > a': {
