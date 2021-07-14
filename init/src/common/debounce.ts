@@ -1,5 +1,5 @@
 export const debounce = (callback: Function, delay: number, ...restArgs: any[]) => {
-  let timeout: number | null = null
+  let timeout: NodeJS.Timeout | null = null
   let _this = this
 
   return function () {
