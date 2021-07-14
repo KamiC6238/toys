@@ -2,7 +2,7 @@ const PENDING = 'pending'
 const FULFILLED = 'fulfilled'
 const REJECTED = 'rejected'
 
-class Promise {
+export class Promise {
   constructor (executor) {
     this.status = PENDING
     this.value = undefined

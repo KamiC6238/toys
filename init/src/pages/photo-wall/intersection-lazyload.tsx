@@ -10,7 +10,7 @@ export const IntersectionObserverLazyload: FC<{}> = memo(() => {
 
       if (intersectionRatio > 0) {
         const _target = target as HTMLImageElement
-        _target.src = _target.dataset['src'] ?? ''
+        _target.src = _target.dataset['src'] ? _target.dataset['src'] : ''
 
         _target.onload = () => {
           _target.style.opacity = '1'
