@@ -9,6 +9,7 @@ module.exports = {
   mode: 'development',
   devServer: {
     publicPath: '/dist',
+    historyApiFallback: true,
   },
   resolve: {
     alias: {},
