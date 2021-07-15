@@ -1,7 +1,7 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
-  entry: {
-    main: './src/main.tsx',
-  },
+  entry: './src/main.tsx',
   output: {
     filename: './bundle.js',
   },
@@ -34,5 +34,6 @@ module.exports = {
       test: /\.(css)$/,
       use: ['css-loader']
     }]
-  }
+  },
+  plugins: [new HtmlWebpackPlugin()]
 }
