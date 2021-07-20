@@ -72,3 +72,36 @@ function myInstanceof (left, right) {
     proto = proto__proto__
   }
 }
+
+// 删除指定数组中的元素，要求原地修改
+function without (arr, args) {
+  let i = 0
+
+  while (i < arr.length) {
+    if (args.includes(arr[i])) {
+      arr.splice(i, 1)
+    } else {
+      i++
+    }
+  }
+  return arr
+}
+
+// 大数相加，考察相加进位
+function addStrings (num1, num2) {
+  let res = ''
+  let i = num1.length - 1
+  let j = num2.length - 1
+  let carry = 0
+
+  while (i >= 0 || j >= 0) {
+    let n1 = i >= 0 ? Number(num1[i]) : 0
+    let n2 = j >= 0 ? Number(num2[j]) : 0
+    let tmp = n1 + n2 + carry
+    carry = Math.floor(tmp / 10)
+    res = String(tmp % 10) + res
+    i -= 1
+    j -= 1
+  }
+  return carry ? '1' + res : res
+}

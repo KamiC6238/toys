@@ -36,7 +36,15 @@ export class PublishSubscribe {
     this.subscribe(type, _callback)
   }
 
-  unsubsribe (type: string, callback: Function) {
+  unsubsribe (type?: string, callback?: Function) {
+    if (!type) {
+      this.events = {}
+      return
+    }
+    if (type && !callback) {
+      delete this.events[type]
+      return
+    } 
     if (this.events[type]) {
       const callbackIndex = this.events[type].findIndex(cb => cb === callback)
 
@@ -47,9 +55,5 @@ export class PublishSubscribe {
         delete this.events[type]
       }
     }
-  }
-
-  unsubscribeAll () {
-    this.events = {}
   }
 }
