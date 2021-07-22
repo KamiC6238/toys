@@ -13,6 +13,7 @@
 10. 实现一个 `memorized` 函数，用于缓存函数的计算结果
 11. `reduce` 实现数组拍平
 12. `callback` 实现 `lazyMan`
+13. 剑指 offer 算法 `javascript` 解法
 
 # 技术栈 (可能会持续更新)
 前端框架: React
